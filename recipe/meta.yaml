@@ -3,7 +3,7 @@
 
 package:
   name: r-party
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
@@ -66,6 +66,7 @@ test:
 
 about:
   home: http://party.R-forge.R-project.org
+  dev_url: https://codeberg.org/thothorn/party
   license: GPL-2.0-only
   summary: A computational toolbox for recursive partitioning. The core of the package is ctree(), an implementation of conditional inference trees which embed tree-structured  regression models into a well defined theory of conditional inference procedures. This non-parametric class of regression trees is applicable 
     to all kinds of regression problems, including nominal, ordinal, numeric, censored as well as multivariate response variables and arbitrary measurement scales of the covariates.  Based on conditional inference trees, cforest() provides an implementation of Breiman's random forests. The function mob() implements an 
